@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pruthvi | Computer Science Engineering Student, Bengaluru</title>
+<meta name="description" content="Portfolio of Pruthvi, a first-year Computer Science Engineering student at New Horizon College of Engineering, Bengaluru. Programming, AI, web development and UI/UX design.">
+<meta name="author" content="Pruthvi">
+<meta name="theme-color" content="#07050d">
+<meta property="og:title" content="Pruthvi | CSE Student Portfolio">
+<meta property="og:description" content="Building Ideas Into Reality.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%AE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <div class="loader-core"><span></span><span></span><span></span></div>
+  <p class="loader-text">Loading<span id="loadPct">0</span>%</p>
+</div>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="glow g1"></div><div class="glow g2"></div>
+
+<header id="nav">
+  <a href="#home" class="logo">pruthvi<span>.</span></a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu" aria-label="Main">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="hello">Hi, I'm</p>
+    <h1 id="name" aria-label="Pruthvi">Pruthvi</h1>
+    <h2 class="tagline">Building Ideas Into Reality.</h2>
+    <p class="lead">A first-year Computer Science Engineering student in Bengaluru, exploring programming, artificial intelligence and design to build things people can actually use.</p>
+    <div class="btns">
+      <a href="cv.pdf" class="btn primary" id="cvBtn" download>Download CV</a>
+      <a href="#projects" class="btn ghost">Explore My Work</a>
+    </div>
+  </div>
+  <div class="hero-3d" aria-hidden="true">
+    <div class="scene" id="scene">
+      <div class="cube">
+        <div class="face f1">&lt;/&gt;</div><div class="face f2">AI</div>
+        <div class="face f3">{ }</div><div class="face f4">C</div>
+        <div class="face f5">Py</div><div class="face f6">JS</div>
+      </div>
+      <div class="ring r1"></div><div class="ring r2"></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="title reveal">About me</h2>
+  <div class="about-grid">
+    <div class="reveal">
+      <p>I'm Pruthvi, a Computer Science Engineering student at New Horizon College of Engineering in Bengaluru. I enjoy turning ideas into working software, from small programs to full websites.</p>
+      <p>My journey started with curiosity about how apps and websites work. Since then I've been learning programming, web development and the basics of artificial intelligence, and I design the interfaces I build.</p>
+    </div>
+    <div class="reveal">
+      <h3>Interests</h3>
+      <ul class="chips">
+        <li>Programming</li><li>Artificial Intelligence</li><li>Web Development</li><li>UI/UX Design</li><li>Technology &amp; Innovation</li>
+      </ul>
+      <h3>Future goals</h3>
+      <p>To grow into a skilled software engineer, build AI-powered products that solve real problems, and contribute to open-source projects.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="title reveal">Skills</h2>
+  <p class="sub reveal">Add <code>data-level="70"</code> to any card to show your own level. Without it, the bar shows a neutral "exploring" animation.</p>
+  <div class="skills-grid">
+    <article class="skill reveal"><h3>HTML</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>CSS</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>JavaScript</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>Python</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>C Programming</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>Artificial Intelligence</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>GitHub</h3><div class="bar"><b></b></div></article>
+    <article class="skill reveal"><h3>UI/UX Design</h3><div class="bar"><b></b></div></article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="title reveal">Projects</h2>
+  <div class="proj-grid">
+    <!-- To add an image: put it in the repo and replace the .thumb div with <img class="thumb" src="your-image.jpg" alt="Project name"> -->
+    <article class="card reveal tilt">
+      <div class="thumb">Image coming soon</div>
+      <h3>Smart Attendance System</h3>
+      <p>Project description coming soon. Edit this text in index.html.</p>
+      <a class="link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card reveal tilt">
+      <div class="thumb">Image coming soon</div>
+      <h3>Personal Portfolio Website</h3>
+      <p>The site you're looking at, built with HTML, CSS and JavaScript.</p>
+      <a class="link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card reveal tilt">
+      <div class="thumb">Image coming soon</div>
+      <h3>AI-Based Projects</h3>
+      <p>Project description coming soon. Edit this text in index.html.</p>
+      <a class="link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card reveal tilt">
+      <div class="thumb">Image coming soon</div>
+      <h3>Python Programming Projects</h3>
+      <p>Project description coming soon. Edit this text in index.html.</p>
+      <a class="link" href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 class="title reveal">Education</h2>
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <h3>First-Year Computer Science Engineering</h3>
+      <p>New Horizon College of Engineering, Bengaluru, India</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="title reveal">Let's connect</h2>
+  <p class="sub reveal">Have an idea, an opportunity or just want to say hi? Reach out.</p>
+  <div class="btns center reveal">
+    <!-- Replace the placeholder links below with your own -->
+    <a class="btn primary" href="mailto:your-email@example.com">Email</a>
+    <a class="btn ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="year">2026</span> Pruthvi. Bengaluru, India.</footer>
+
+<button id="toTop" aria-label="Back to top">&uarr;</button>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
